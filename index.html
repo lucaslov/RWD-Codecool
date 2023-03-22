@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecool RWD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Codecool RWD</h1>
+        <nav>
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button id="hamburgerMenu" class="hamburger-menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>Content goes here...</p>
+            </div>
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>Content goes here...</p>
+            </div>
+            <div class="column">
+                <h2>Column 3</h2>
+                <p>Content goes here...</p>
+            </div>
+            <div class="column">
+                <h2>Column 4</h2>
+                <p>Content goes here...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque sem id justo sagittis,
+                    et bibendum metus lacinia.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>123 Street, City, Country</p>
+                <p>Phone: (555) 555-5555</p>
+                <p>Email: info@example.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Codecool RWD. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("hamburgerMenu").addEventListener("click", function () {
+            document.getElementById("navMenu").classList.toggle("nav-menu-active");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+/* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Media queries to adjust for different screen resolutions */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .column {
+        /* Adjusting the column width for small devices */
+        flex-basis: calc(50% - 40px);
+        /* 50% of container width minus column padding */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .column {
+        /* Adjusting the column width for medium devices */
+        flex-basis: calc(33.333% - 40px);
+        /* 33.333% of container width minus column padding */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .column {
+        /* Adjusting the column width for large devices */
+        flex-basis: calc(25% - 40px);
+        /* 25% of container width minus column padding */
+    }
+}
+
+/* Mobile devices (smartphones, below 600px) */
+@media only screen and (max-width: 599px) {
+    .hamburger-menu {
+        /* Show the hamburger menu on mobile devices */
+        display: block;
+    }
+
+    .nav-menu {
+        /* Hide the nav menu on mobile devices */
+        display: none;
+    }
+
+    .nav-menu-active {
+        /* Show the nav menu when the hamburger menu is clicked */
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-menu-active li {
+        /* Stack menu items vertically on mobile devices */
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    min-width: 280px;
+    box-sizing: border-box;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Adjust footer layout for small and medium devices */
+@media only screen and (max-width: 991px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
